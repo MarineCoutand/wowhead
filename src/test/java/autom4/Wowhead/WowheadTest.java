@@ -24,8 +24,10 @@ public class WowheadTest {
 			driver = new FirefoxDriver();
 		}else if(BROWSER.equals("Chrome")){
 			driver = new ChromeDriver();
-		}else{
+		}else if(BROWSER.equals("IE")){
 			driver = new InternetExplorerDriver();
+		}else{
+			driver = new FirefoxDriver();
 		}
 		
 		
