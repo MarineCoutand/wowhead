@@ -9,7 +9,7 @@ import java.net.URL;
 
 public class PageItem {
 
-	public List<String> recuperationCaracteristiques(String index) throws FileNotFoundException {
+	public List<String> recuperationCaracteristiquesFichier(String index) throws FileNotFoundException {
 		URL caract = PageItem.class.getClassLoader().getResource("src/test/java/resources/objet" + index + ".txt");
 		File caractResource = new File(caract.getFile());
 		
@@ -22,5 +22,7 @@ public class PageItem {
 	   
 	    return list;
 	}
+	
+
 	
 }
