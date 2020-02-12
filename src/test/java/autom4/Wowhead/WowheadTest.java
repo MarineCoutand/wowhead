@@ -23,7 +23,11 @@ public class WowheadTest {
 			driver = new FirefoxDriver();
 		}else if(BROWSER=="Chrome"){
 			driver = new ChromeDriver();
+		}else{
+			driver = new FirefoxDriver();
 		}
+		
+		
 		driver.get("https://fr.wowhead.com/");
 		driver.manage().window().maximize();
 		PageAccueil pageAccueil = PageFactory.initElements(driver, PageAccueil.class);
