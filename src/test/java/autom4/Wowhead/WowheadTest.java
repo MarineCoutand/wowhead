@@ -3,6 +3,7 @@ package autom4.Wowhead;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.PageFactory;
 
 
@@ -19,12 +20,12 @@ public class WowheadTest {
 	
 	@Test
 	public void test() throws InterruptedException {
-		if(BROWSER=="Firefox") {
+		if(BROWSER.equals("Firefox")) {
 			driver = new FirefoxDriver();
-		}else if(BROWSER=="Chrome"){
+		}else if(BROWSER.equals("Chrome")){
 			driver = new ChromeDriver();
 		}else{
-			driver = new FirefoxDriver();
+			driver = new InternetExplorerDriver();
 		}
 		
 		
