@@ -10,9 +10,10 @@ import org.junit.Test;
 
 public class WowheadTest {
 
-	WebDriver driver = new FirefoxDriver();
-	String recherche = "Lardeur";
-	String item1 = "Chahuteurs de cadavre";
+	private WebDriver driver = new FirefoxDriver();
+	private String recherche = "Lardeur";
+	private String item1 = "Chahuteurs";
+//	private String BROWSER=System.getProperty("browser");
 	
 	@Test
 	public void test() throws InterruptedException {
